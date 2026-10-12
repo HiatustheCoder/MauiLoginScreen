@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MauiLoginScreen.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="15">
+
+            <Label
+                Text="Dalvin Wolff"
+                FontSize="28"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Login Screen"
+                FontSize="22"
+                FontAttributes="Bold,Italic"
+                HorizontalOptions="Center" />
+
+            <Label Text="User Name" />
+
+            <Entry
+                x:Name="UserNameEntry"
+                Placeholder="Enter your user name" />
+
+            <Label Text="Password" />
+
+            <Entry
+                x:Name="PasswordEntry"
+                Placeholder="Enter your password"
+                IsPassword="True" />
+
+            <HorizontalStackLayout
+                Spacing="15"
+                HorizontalOptions="Center">
+
+                <Button
+                    Text="Login"
+                    Clicked="OnLoginClicked" />
+
+                <Button
+                    Text="Cancel"
+                    Clicked="OnCancelClicked" />
+
+            </HorizontalStackLayout>
+
+            <Label
+                x:Name="MessageLabel"
+                Text=""
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
